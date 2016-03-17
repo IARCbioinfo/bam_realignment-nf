@@ -43,7 +43,7 @@ bams = Channel.fromPath( params.bam_folder+'/*.bam' )
 
 process bam_realignment {
 
-    memory = params.mem+'GB'    
+    memory params.mem+'GB'    
   
     tag { bam_tag }
 
